@@ -4,6 +4,7 @@ import { assets } from '../assets/frontend_assets/assets';
 import { ShopContext } from '../context/ShopContext';
 import RelatedProducts from '../components/RelatedProducts';
 import { data } from 'autoprefixer';
+import { toast } from 'react-toastify';
 
 const Product = () => {
   const { productId } = useParams();
@@ -13,6 +14,19 @@ const Product = () => {
   const [image, setImage] = useState('');
   const [size, setSize] = useState('');
 
+  const WhatsAppEnquire = (name , price , size )=>{
+    try {
+      const shoe = {
+        name: name,
+        price: price,
+        size
+      };
+      const message = `Hello! I’m interested in this shoe:\nName: ${shoe.name}\nPrice: ${shoe.price}\nSize: ${shoe.size}`;
+      location.href = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`
+    } catch (error) {
+      toast.error(error.message)
+    }
+  }
   const fetchProudctData = async () => {
     products.map((item) => {
       if (item._id === productId) {
@@ -89,8 +103,8 @@ const Product = () => {
             </div>
           </div>
 
-          <button onClick={()=>{addToCart(proudctData._id , size)}} className=" bg-black text-white px-8 py-3 text-sm active:bg-gray-700 ">
-            ADD TO CART
+          <button onClick={()=> WhatsAppEnquire(proudctData.name , proudctData.price , size)} className=" bg-black text-white px-8 py-3 text-sm active:bg-gray-700 ">
+            ENQUIRE
           </button>
           <hr className=" mt-8 sm:w-4/5" />
 

@@ -7,7 +7,7 @@ import {
   singleProduct,
 } from '../controllers/product.controller.js';
 import upload from '../middleware/multer.middleware.js';
-import adminAuth from '../middleware/admin.auth.js';
+
 
 const productRouter = express.Router();
 
@@ -31,10 +31,10 @@ productRouter.post(
       maxCount: 1,
     },
   ]),
-  adminAuth,
+  
   addProduct
 );
-productRouter.post('/remove', adminAuth, removeProduct);
+productRouter.post('/remove',  removeProduct);
 productRouter.post('/single', singleProduct);
 productRouter.get('/list', listProducts);
 

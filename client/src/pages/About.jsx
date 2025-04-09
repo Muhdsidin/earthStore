@@ -17,7 +17,8 @@ const About = () => {
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
-          We are a dedicated team committed to providing exceptional services and solutions tailored to meet the needs of our clients. With a focus on quality, innovation, and customer satisfaction, we strive to exceed expectations in everything we do.
+          Welcome to Earthstore – where style, comfort, and conscious choices come together. We’re here to help you find footwear that fits not just your feet, but your values too. From everyday essentials to statement styles, our carefully curated collections are designed to move with you—wherever life takes you.
+
 
           </p>
           <p>
@@ -26,7 +27,7 @@ const About = () => {
           </p>  
           <b className="text-gray-800 ">Our Mission</b>
           <p>
-          Our mission is to empower individuals and businesses through our products and services. We aim to create value and foster growth by staying ahead of industry trends and focusing on our customers’ evolving needs.
+          At Earthstore, our aim is to make fashion-forward footwear accessible, comfortable, and conscious. We strive to offer products that not only elevate your style but also make shopping easy, enjoyable, and aligned with your values. Every pair is chosen to inspire confidence and support your journey—wherever life takes you.
 
           </p>
         </div>
@@ -38,7 +39,8 @@ const About = () => {
           <div className=" border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5">
             <b>Quality Assurance </b>
             <p className="text-gary-600 ">
-            Our team is dedicated to maintaining the highest standards of quality in every aspect of our work, ensuring reliable and consistent results.
+            Earthstore delivers footwear that’s stylish, durable, and made for comfort. Each pair is handpicked to ensure long-lasting quality you can rely on.
+
 
             </p>
           </div>

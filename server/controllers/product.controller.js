@@ -17,6 +17,7 @@ const addProduct = async (req, res) => {
     const image2 = req.files.image2?.[0];
     const image3 = req.files.image3?.[0];
     const image4 = req.files.image4?.[0];
+    console.log("api triggererd successfully");
 
     const images = [image1, image2, image3, image4].filter(
       (item) => item != undefined
@@ -46,6 +47,7 @@ const addProduct = async (req, res) => {
     const product = new productModel(productData);
 
     await product.save();
+    console.log(product)
 
     res.json({
       success: true,
@@ -62,6 +64,11 @@ const addProduct = async (req, res) => {
 const listProducts = async (req, res) => {
   try {
     const products = await productModel.find({});
+    if(products.length == 0){
+      return res.status(200).json({
+        message : " There is no product With in This Database "
+      })
+    }
 
     res.json({
       success: true,

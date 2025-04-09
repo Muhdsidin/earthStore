@@ -3,6 +3,7 @@ import { assets } from '../assets/assets';
 import axios from 'axios';
 import { backendUrl } from '../App';
 import { toast } from 'react-toastify';
+import { BACK_END_URL } from '../utils/Url';
 
 const Add = ({ token }) => {
   const [image1, setImage1] = useState(null);
@@ -37,7 +38,7 @@ const Add = ({ token }) => {
       image4 && formData.append('image4', image4);
 
       const response = await axios.post(
-        backendUrl + '/api/product/add',
+        `${BACK_END_URL}/api/product/add`,
         formData,
         { headers: { token: token } }
       );

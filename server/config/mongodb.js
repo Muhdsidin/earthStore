@@ -7,7 +7,7 @@ const connectDB = async() =>{
         mongoose.connection.on('connected', ()=>{
             console.log("DB connected");
         })
-        const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/e-commerce`);
+        const connectionInstance = await mongoose.connect(`mongodb+srv://officialzedro:kH3btk42KbdT0LdA@zedro.lkefs1t.mongodb.net/?retryWrites=true&w=majority&appName=zedro`);
 
     } catch (error) {
 

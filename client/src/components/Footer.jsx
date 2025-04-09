@@ -37,7 +37,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/utsav-gangani-86461325a/"
             target="_blank"
           >
-            ❤️ from Utsav
+            ❤️ from EarthStore
           </a>
         </p>
       </div>

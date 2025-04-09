@@ -31,7 +31,7 @@ const Sidebar = () => {
           />
           <p className="hidden md:block">List Items</p>
         </NavLink>
-        <NavLink
+        {/* <NavLink
           className={({ isActive }) =>
             `${navLinkStyles} ${isActive ? 'active font-semibold' : ''}`
           }
@@ -43,7 +43,7 @@ const Sidebar = () => {
             alt="Order items icon"
           />
           <p className="hidden md:block">Order Items</p>
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
