@@ -7,7 +7,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   const currency = '$';
   const delievry_fee = 10;
-  const backendUrl = "http://localhost:4000";
+  const backendUrl = "https://earth-store-eight.vercel.app";
   const [search, setSearch] = useState('');
   const [showSearch, setShowSearch] = useState(false);
   const [cartItem, setCartItem] = useState({});
