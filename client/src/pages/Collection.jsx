@@ -139,34 +139,85 @@ const Collection = () => {
             showFilter ? '' : 'hidden'
           } sm:block`}
         >
-          <p className="mb-3 text-sm font-medium">TYPE</p>
+          <p className="mb-3 text-sm font-medium">BRANDS</p>
           <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={'Topwear'}
+                value={'Nike '}
                 onChange={toggleSubCategory}
               />{' '}
-              Topwear
+              Nike
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={'Bottomwear'}
+                value={'New Balance'}
                 onChange={toggleSubCategory}
               />
-              Bottomwear
+              New Balance
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={'Winterwear'}
+                value={'Adidas'}
                 onChange={toggleSubCategory}
               />
-              Winterwear
+              Adidas
+            </p>
+
+
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={'Asics'}
+                onChange={toggleSubCategory}
+              />
+              Asics
+            </p>
+
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={'Converse'}
+                onChange={toggleSubCategory}
+              />
+              Converse
+            </p>
+
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={'Puma'}
+                onChange={toggleSubCategory}
+              />
+              Puma
+            </p>
+
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={'Vans'}
+                onChange={toggleSubCategory}
+              />
+              Vans
+            </p>
+
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={'Balenciaga'}
+                onChange={toggleSubCategory}
+              />
+              Balenciaga
             </p>
           </div>
         </div>

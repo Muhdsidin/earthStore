@@ -162,15 +162,20 @@ const Add = ({ token }) => {
           </select>
         </div>
         <div>
-          <p className="mb-2">Sub Category</p>
+          <p className="mb-2">Brand</p>
           <select
             className="w-full px-3 py-2"
             value={subCategory}
             onChange={(e) => setSubCategory(e.target.value)}
           >
-            <option value="Topwear">Topwear</option>
-            <option value="Bottomwear">Bottomwear</option>
-            <option value="Winterwear">Winterwear</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="New Balance">New Balance</option>
+            <option value="Asics">Asics</option>
+            <option value="Converse">Converse</option>
+            <option value="Puma">Puma</option>
+            <option value="Vans">Vans</option>
+            <option value="Balenciaga">Balenciaga</option>
           </select>
         </div>
 
