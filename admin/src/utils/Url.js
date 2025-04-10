@@ -1,1 +1,1 @@
-export const BACK_END_URL = "https://earth-store-eight.vercel.app/"
+export const BACK_END_URL = "https://earth-store-eight.vercel.app"
